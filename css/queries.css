@@ -1,0 +1,13 @@
+@media only screen and (max-width: 480px) {
+    .main-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 1.2fr 1.2fr 1.2fr 1.2fr 0.4fr;
+        grid-template-areas: 
+        "nav"
+        "image1"
+        "image2"
+        "image3"
+        "image4"
+        "footer";
+    }
+}
