@@ -7,7 +7,11 @@
     <title>messedfoods_</title>
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/queries.css" />
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
   </head>
   <body>
     <div class="explore-container" id="container">
@@ -28,29 +32,70 @@
 
       <div class="header"><h3>EXPLORE</h3></div>
       <div class="explore-carousel">
-        <div class="explore-images explore-brotherbird" id="explore-brotherbird"><img src="img/plate.jpg">Brotherbird Cafe</div>
-        <div class="explore-images explore-thai" id="explore-thai"><img src="img/plate.jpg">Thai cafe</div>
-        <div class="explore-images explore-ladym" id="explore-ladym"><img src="img/plate.jpg">Lady M</div>
-        <div class="explore-images explore-glyph" id="explore-glyph"><img src="img/plate.jpg">Glyph</div>
+        <div
+          class="explore-images explore-brotherbird"
+          id="explore-brotherbird"
+        >
+          <img src="img/brotherbird/mochi-donut.jpg" />
+          <p>Brotherbird Coffeehouse</p>
+        </div>
+        <!-- <div class="explore-images explore-thai" id="explore-thai"><img src="img/plate.jpg">Thai cafe</div> -->
+        <!-- <div class="explore-images explore-ladym" id="explore-ladym"><img src="img/plate.jpg">Lady M</div> -->
+        <div class="explore-images explore-haakon" id="explore-haakon">
+          <img src="img/haakon/poke-bowl.jpg" />Haakon Superfoods & Juice
+        </div>
+        <div class="explore-images explore-josh" id="explore-josh">
+          <img src="img/joshgrills/alfredo-pasta.jpg" />Josh's Grills
+        </div>
+        <div class="explore-images explore-glyph" id="explore-glyph">
+          <img src="img/glyph/lemon-cake.jpg" />Glyph Supply Co
+        </div>
       </div>
-      
+
+      <div class="food-overlay">
+        <div id="closeOverlay">
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="main-image"></div>
+
+        <section class="food-info">
+          <h2 id="food-title" class="overlay-title"></h2>
+          <!-- <p id="food-type" class="overlay-type"></p> -->
+          <p id="food-location" class="overlay-location"></p>
+          <p id="project-description" class="overlay-description"></p>
+
+          <div class="thumbnails">
+            <img class="thumbnail" id="thumbnail-1" src="">
+            <img class="thumbnail" id="thumbnail-2" src="">
+            <img class="thumbnail" id="thumbnail-3" src="">
+            <!-- <img class="thumbnail" id="thumbnail-4" src=""> -->
+          </div>
+        </section>
+
+
+      </div>
 
       <footer>
         <h3>Get in touch with me.</h3>
         <div class="instagram">
           Instagram
-          <img src="img/instagram.png" />
+          <img src="img/icons/instagram.png" />
         </div>
 
         <div class="email">
           Email
-          <img src="img/email.png" />
+          <img src="img/icons/email.png" />
         </div>
       </footer>
     </div>
 
     <script src="js/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
     <script src="js/index.js"></script>
   </body>
 </html>
