@@ -4,6 +4,7 @@ $(function () {
   // EXPLORE PAGE OVERLAY
   $("#closeOverlay").click(closeOverlay);
   $(".explore-brotherbird").click(showFood1);
+  $("#thumbnail-1").hover(changeImage);
 
 })
 
@@ -58,6 +59,9 @@ function closeOverlay() {
   $(".explore-carousel").css("opacity", "1");
 }
 
+// import food from './food.json';
+// console.log(food, 'here in index');
+
 function showFood1() {
   // info of location
   var brotherbird = {
@@ -70,7 +74,6 @@ function showFood1() {
     thumbnail1: "img/brotherbird/drinks.jpg",
     thumbnail2: "img/brotherbird/spaghetti-carbonara.jpg",
     thumbnail3: "img/brotherbird/croissant.jpg",
-    // thumbnail3: "images/works/cross-roads/instructions.jpg",
     // thumbnail4: "images/works/cross-roads/hand.jpg",
   };
 
@@ -93,4 +96,8 @@ function showFood1() {
   $("#thumbnail-1").attr("src", brotherbird.thumbnail1);
   $("#thumbnail-2").attr("src", brotherbird.thumbnail2);
   $("#thumbnail-3").attr("src", brotherbird.thumbnail3);
+}
+
+function changeImage() {
+  $(".food-overlay .main-image").css("background-image", "url(" + brotherbird.thumbnail1 + ")");
 }

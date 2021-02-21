@@ -1,0 +1,41 @@
+[
+    {
+        "foodImage": "",
+        "shopName": "Brotherbird",
+        "foodLocation": "32 Bali Ln, Singapore 189868",
+        "foodDescription": "Brotherbird Coffeehouse serves a huge variety of croissants. And not just that, they also serve pasta and other desserts.",
+        "website": "https://brotherbird.sg/",
+        "thumbnail1": "",
+        "thumbnail2": "",
+        "thumbnail3": ""
+    },
+    {
+        "foodImage": "",
+        "shopName": "Glyph",
+        "foodLocation": "111 Somerset Rd, #01 - 06, Singapore 238164",
+        "foodDescription": "",
+        "foodWesite": "https://www.glyphsupply.co/",
+        "thumbnail1": "",
+        "thumbnail2": "",
+        "thumbnail3": ""
+    },
+    {
+        "foodImage": "",
+        "shopName": "Haakon Superfoods & Juice",
+        "foodLocation": "",
+        "foodDescription": "",
+        "foodWesite": "https://www.haakon.com.sg/",
+        "thumbnail1": "",
+        "thumbnail2": "",
+        "thumbnail3": ""
+    },
+    {
+        "foodImage": "",
+        "shopName": "Josh's Grills",
+        "foodLocation": "200 Victoria Street #01-69 Bugis Junction, 188021",
+        "foodDescription": "",
+        "thumbnail1": "",
+        "thumbnail2": "",
+        "thumbnail3": ""
+    }
+]
