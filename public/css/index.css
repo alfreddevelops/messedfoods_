@@ -295,7 +295,6 @@ footer img {
   grid-area: header;
   letter-spacing: 1.2em;
   font-size: 30px;
-  /* font-weight: italic; */
 }
 
 .explore-carousel {
@@ -314,7 +313,7 @@ footer img {
 }
 
 .slick-active {
-  width: 300px;
+  width: 399px;
   opacity: 0.45;
   transition: 0.5s ease-in-out;
 }
@@ -419,7 +418,6 @@ footer img {
   height: 100%;
   width: 100%;
   transition: 0.8s ease-in-out;
-  display: flex;
   flex-wrap: wrap;
   background-color: white;
 }
@@ -429,6 +427,7 @@ footer img {
   opacity: 1;
   left: 0;
   background-color: white;
+  display: flex;
 }
 
 .food-info {
@@ -441,6 +440,7 @@ footer img {
   margin: 0 auto;
   width: 40%;
   height: 100%;
+  border: 1px solid black;
 }
 
 .food-info p {
@@ -452,7 +452,7 @@ footer img {
   background-position: center;
   background-size: cover;
   width: 50%;
-  height: 80%;
+  height: auto;
 }
 
 .overlay-location {

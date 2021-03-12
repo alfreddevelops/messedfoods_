@@ -4,18 +4,7 @@ $(function () {
 
   // EXPLORE PAGE OVERLAY
   $("#closeOverlay").click(closeOverlay);
-  // $(".explore-brotherbird").click(showFood1);
-  // $("#thumbnail-1").hover(changeImage);
-
 })
-
-// var navbar = document.createElement('style');
-// navbar.innerHTML = `
-// #nav-bar { 
-//   width: 10%;
-//   height: 100%;
-//   position: absolute;
-// }`;
 
 function openMenu() {
   $('#hamburger-menu').toggleClass("open");
@@ -24,28 +13,38 @@ function openMenu() {
 }
 
 $('.explore-carousel').slick({
-  centerMode: true,
-  centerPadding: '50px',
-  slidesToShow: 3,
+  dots: false,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 4,
   responsive: [
     {
-      breakpoint: 768,
+      breakpoint: 1024,
       settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 3
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
       }
     },
     {
       breakpoint: 480,
       settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 1
+        slidesToShow: 1,
+        slidesToScroll: 1
       }
     }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
   ]
 });
 
@@ -54,6 +53,7 @@ function closeOverlay() {
   $(".explore-carousel").css("opacity", "1");
 }
 
+// global variable for json
 var food;
 
 function foodData() {
@@ -67,7 +67,6 @@ function foodData() {
       //TYPE ALL THE CODES IN HERE
       food = json;
 
-      console.log(food[0].brotherbird.shopName);
       $(".explore-brotherbird").click(brotherbirdInfo);
 
     })
@@ -79,12 +78,12 @@ function foodData() {
 
 // Brotherbird Coffeehouse
 function brotherbirdInfo() {
+  $("footer").css("display", "none");
   $(".explore-carousel").css("opacity", "0.5");
   $(".food-overlay").addClass("appear");
 
   $(".food-overlay .main-image").css("background-image", "url(" + food[0].brotherbird.foodImage + ")");
   $(".overlay-title").html(food[0].brotherbird.shopName);
-  // $(".overlay-type").html(brotherbird.foodType);
 
   var pin = document.createElement("img");
   pin.src = "img/icons/pin.png";
@@ -99,7 +98,3 @@ function brotherbirdInfo() {
   $("#thumbnail-2").attr("src", food[0].brotherbird.thumbnail2);
   $("#thumbnail-3").attr("src", food[0].brotherbird.thumbnail3);
 }
-
-// function changeImage() {
-//   $(".food-overlay .main-image").css("background-image", "url(" + brotherbird.thumbnail1 + ")");
-// }
