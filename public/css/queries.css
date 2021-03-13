@@ -11,7 +11,7 @@
         "footer";
     }
 
-    .explore-carousel {
+    .explore-container {
         grid-template-columns: 1fr;
         grid-template-rows: 0.4fr 0.4fr 2fr 0.4fr;
         grid-template-areas: 

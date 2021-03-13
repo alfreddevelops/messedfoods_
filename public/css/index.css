@@ -281,20 +281,22 @@ footer img {
   display: grid;
   height: 100vh;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.25fr 0.1fr 1fr 0.2fr;
+  grid-template-rows: 0.2fr 0.1fr 0.5fr 0.2fr;
   grid-template-areas: 
   "nav nav nav nav"
   "header header header header"
   "carousel carousel carousel carousel"
   "footer footer footer footer";
   grid-gap: 2rem;
+  /* flex-wrap: wrap; */
 }
 
 .header {
-  margin: 0 auto;
+  margin: 10px auto 0;
   grid-area: header;
   letter-spacing: 1.2em;
   font-size: 30px;
+  border: 1px solid black;
 }
 
 .explore-carousel {
