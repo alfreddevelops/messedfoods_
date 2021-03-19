@@ -216,9 +216,14 @@ footer {
   /* background-color: #33F6F1; */
   font-size: 12px;
   grid-area: footer;
+  position: absolute;
+  bottom: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  height: 10%;
+  /* color: white; */
   /* border: 1px solid black; */
 }
 
@@ -226,7 +231,6 @@ footer div {
   display: flex;
   align-items: center;
   margin-left: 10px;
-  /* margin-right: 20px; */
   padding: 10px;
 }
 
@@ -238,15 +242,23 @@ footer img {
 
 /************* GRID TEMPLATE FOR HOMEPAGE *************/
 .homepage-container {
-  display: grid;
+  /* display: grid;
+  width: 100%;
   height: 100vh;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.25fr 2fr 0.25fr;
+  grid-template-rows: 0.1fr 1fr 0.1fr;
   grid-template-areas:
   "nav nav nav nav"
-  "image1 image2 image3 image4"
+  "masthead masthead masthead masthead"
   "footer footer footer footer";
-  grid-gap: 0.3rem;
+  grid-gap: 0.3rem; */
+
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  height: 100vh;
+  width: 100%;
+  /* border: 1px solid black; */
 }
 
 /************* IMAGES FOR HOMEPAGE *************/
@@ -254,28 +266,41 @@ footer img {
   border-radius: var(--main-radius);
 } */
 
-#image1 {
-  background-color: #b4beff;
-  grid-area: image1;
-  border-radius: var(--main-radius);
+.masthead {
+  grid-area: masthead;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid black; */
 }
 
-#image2 {
-  background-color: #8f9cef;
-  grid-area: image2;
-  border-radius: var(--main-radius);
+.masthead img {
+  width: calc(100% / 3);
+  height: 100%;
 }
 
-#image3 {
-  background-color: #6779ec;
-  grid-area: image3;
-  border-radius: var(--main-radius);
+.masthead-overlay {
+  position: absolute;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  background-color: black;
 }
 
-#image4 {
-  background-color: #5c69bd;
-  grid-area: image4;
-  border-radius: var(--main-radius);
+.masthead-title {
+  /* width: 100%; */
+  font-weight: bold;
+  color: white;
+  font-size: 3em;
+  letter-spacing: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
 }
 
 /************* GRID TEMPLATE FOR EXPLORE PAGE *************/
