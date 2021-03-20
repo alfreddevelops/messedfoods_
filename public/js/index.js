@@ -78,7 +78,7 @@ function foodData() {
 
 // Brotherbird Coffeehouse
 function brotherbirdInfo() {
-  $("footer").css("display", "none");
+  // $("footer").css("display", "none");
   $(".explore-carousel").css("opacity", "0.5");
   $(".food-overlay").addClass("appear");
 
