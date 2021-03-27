@@ -23,6 +23,14 @@
 
 /* TABLET */
 @media only screen and (max-width: 1024px) {
+    
+    footer p{
+        display: none;
+    }
+
+    footer img {
+        width: 18px;
+    }
 
     .masthead img {
         width: 100%;

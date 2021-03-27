@@ -23,7 +23,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: var(--main-bg);
+  /* background-color: var(--main-bg); */
   scroll-behavior: smooth;
 }
 
@@ -33,6 +33,12 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Playfair Display', serif;
   font-weight: 400;
   font-style: italic;
+}
+
+#container {
+  height: 100vh;
+  padding: 0;
+  margin: 0;
 }
 
 /************* NAV BAR *************/
@@ -273,7 +279,6 @@ footer img {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border: 1px solid black; */
 }
 
 .masthead img {
@@ -337,7 +342,6 @@ footer img {
   margin: 0 auto;
   opacity: 1;
   padding: 10px;
-  /* border: 1px solid black; */
 }
 
 .explore-images {
@@ -346,7 +350,7 @@ footer img {
   align-items: center;
   text-align: center;
   outline: none;
-  /* border: 1px solid red; */
+  cursor: pointer;
 }
 
 .slick-active {
@@ -355,16 +359,16 @@ footer img {
   transition: 0.5s ease-in-out;
 }
 
-/* .slick-current {
-  opacity: 1;
-  transition: 0.5s ease-in-out;
-} */
-
 .explore-images img {
   max-width: 80%;
   height: auto;
   margin: 0 auto;
-  /* margin-left: 15px; */
+  opacity: 0.7;
+  transition: 0.5s ease-in-out;
+}
+
+.explore-images img:hover {
+  opacity: 1;
 }
 
 .slick-prev {
@@ -457,7 +461,6 @@ footer img {
   height: 100%;
   width: 100%;
   transition: 0.8s ease-in-out;
-  /* flex-wrap: wrap; */
   background-color: white;
 }
 
@@ -466,7 +469,6 @@ footer img {
   opacity: 1;
   left: 0;
   background-color: white;
-  /* display: flex; */
 }
 
 .food-info {
@@ -477,19 +479,15 @@ footer img {
   text-align: left;
   flex-wrap: wrap;
   margin: 0 auto;
-  width: 40%;
-  border: 1px solid black;
+  width: 35%;
+  /* border: 1px solid black; */
 }
 
-/* .food-info p {
-  font-size: 14px;
-} */
-
 .main-image {
-  margin: 50px 0 30px 100px;
+  margin: 50px 0 50px 100px;
   background-position: center;
   background-size: cover;
-  width: 50%;
+  width: 40%;
   height: auto;
 }
 
@@ -519,7 +517,19 @@ footer img {
   height: 90%;
 }
 
-/* #thumbnail-1:hover {
-  transition: 0.5s ease-in-out;
-  height: 100%;
-} */
+
+
+/************* CONTACT PAGE *************/
+.contact-container {
+  background-color: var(--main-color);
+}
+
+.wip-text {
+  text-align: center;
+  color: white;
+  letter-spacing: 0.2em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
