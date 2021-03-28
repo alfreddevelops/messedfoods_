@@ -46,8 +46,11 @@
     }
 
     .food-info {
-        width: 80%;
+        width: 100%;
+        padding: 30px;
         height: 100vh;
+        /* background-color: #727272; */
+        /* color: white; */
     }
 
     .thumbnail {

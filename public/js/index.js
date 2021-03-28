@@ -13,15 +13,19 @@ function openMenu() {
 }
 
 $('.explore-carousel').slick({
+  centerMode: true,
+  centerPadding: '40px',
   dots: false,
   infinite: true,
   speed: 300,
-  slidesToShow: 4,
-  slidesToScroll: 4,
+  slidesToShow: 3,
+  // slidesToScroll: 4,
+  variableWidth: true,
   responsive: [
     {
       breakpoint: 1024,
       settings: {
+        centerMode: true,
         slidesToShow: 3,
         slidesToScroll: 3,
         infinite: true,
@@ -31,6 +35,7 @@ $('.explore-carousel').slick({
     {
       breakpoint: 600,
       settings: {
+        centerMode: true,
         slidesToShow: 2,
         slidesToScroll: 2
       }
@@ -84,6 +89,8 @@ function brotherbirdInfo() {
 
   $(".food-overlay .main-image").css("background-image", "url(" + food[0].brotherbird.foodImage + ")");
   $(".overlay-title").html(food[0].brotherbird.shopName);
+  $(".overlay-rating").append(food[0].brotherbird.foodRating);
+  $(".overlay-ambience").append(food[0].brotherbird.ambienceRating);
 
   var pin = document.createElement("img");
   pin.src = "img/icons/pin.png";
