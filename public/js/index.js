@@ -56,6 +56,8 @@ $('.explore-carousel').slick({
 function closeOverlay() {
   $(".food-overlay").removeClass("appear");
   $(".explore-carousel").css("opacity", "1");
+  $(".food-info").css("display", "none");
+  $("#hamburger-menu").css("display", "block");
 }
 
 // global variable for json
@@ -85,6 +87,8 @@ function foodData() {
 function brotherbirdInfo() {
   // $("footer").css("display", "none");
   $(".explore-carousel").css("opacity", "0.5");
+  $(".food-info").css("display", "flex");
+  $("#hamburger-menu").css("display", "none");
   $(".food-overlay").addClass("appear");
 
   $(".food-overlay .main-image").css("background-image", "url(" + food[0].brotherbird.foodImage + ")");
