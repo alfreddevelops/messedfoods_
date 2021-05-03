@@ -516,28 +516,27 @@ footer img {
   align-items: flex-start;
   text-align: left;
   flex-wrap: wrap;
-  margin: 10% auto;
-  width: 65%;
+  margin: 8% auto;
+  width: 55%;
   height: 200%;
-  padding: 20px;
-  line-height: 1.4;
-  background-color: #FFE8E8;
-  /* border: 1px solid red; */
+  padding: 30px;
+  line-height: 1.2;
+  background-color: #dddcdc;
 }
 
 #food-title {
   width: 100%;
+  margin-top: 5%;
   font-size: 30px;
   /* border: 1px solid black; */
 }
 
 .main-image {
-  /* border: 1px solid black; */
   /* margin: 10px auto; */
   background-position: center;
   background-size: cover;
-  width: 400px;
-  height: 100px;
+  width: 70%;
+  height: 40%;
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
@@ -558,14 +557,14 @@ footer img {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 100%;
-  height: 20%;
-  margin-top: 2%;
+  width: 90%;
+  height: 15%;
+  border: 1px solid black;
 }
 
 .thumbnails img {
   width: auto;
-  height: 90%;
+  height: 80%;
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
