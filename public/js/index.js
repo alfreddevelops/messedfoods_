@@ -97,16 +97,18 @@ function cssChanges() {
 function brotherbirdInfo() {
   $(".food-overlay .main-image").css("background-image", "url(" + food[0].brotherbird.foodImage + ")");
   $(".overlay-title").html(food[0].brotherbird.shopName);
+  $(".main-image-description").append(food[0].brotherbird.foodDescription)
+
+  // var pin = document.createElement("img");
+  // pin.src = "img/icons/pin.png";
+  // var src = document.getElementById("food-location");
+  // src.appendChild(pin);
+  $(".overlay-location").append(food[0].brotherbird.shopLocation);
+  $(".overlay-description").html(food[0].brotherbird.shopDescription);
   $(".overlay-rating").append(food[0].brotherbird.foodRating);
   $(".overlay-ambience").append(food[0].brotherbird.ambienceRating);
-
-  var pin = document.createElement("img");
-  pin.src = "img/icons/pin.png";
-  var src = document.getElementById("food-location");
-  src.appendChild(pin);
-  $(".overlay-location").append(food[0].brotherbird.shopLocation);
-
-  $(".overlay-description").html(food[0].brotherbird.foodDescription);
+  $("#opening-hours").append(food[0].brotherbird.openingHours);
+  $("#shop-website").append(food[0].brotherbird.shopWebsite);
 
   $("#thumbnail-1").attr("src", food[0].brotherbird.thumbnail1);
   $("#thumbnail-2").attr("src", food[0].brotherbird.thumbnail2);

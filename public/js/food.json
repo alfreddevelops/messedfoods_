@@ -4,13 +4,15 @@
             "shopName": "Brotherbird Coffeehouse",
             "foodImage": "img/brotherbird/mochi-donut.jpg",
             "shopLocation": "32 Bali Ln, Singapore 189868",
-            "foodDescription": "Brotherbird Coffeehouse serves a huge variety of croissants. And not just that, they also serve pasta and other desserts.",
+            "shopDescription": "Brotherbird Coffeehouse serves a huge variety of croissants. And not just that, they also serve pasta and other desserts.",
+            "foodDescription": "a short description of the main image",
             "shopWebsite": "https://brotherbird.sg/",
             "thumbnail1": "img/brotherbird/drinks.jpg",
             "thumbnail2": "img/brotherbird/spaghetti-carbonara.jpg",
             "thumbnail3": "img/brotherbird/croissant.jpg",
             "foodRating": "9/10",
-            "ambienceRating": "9/10"
+            "ambienceRating": "9/10",
+            "openingHours": "10am - 6pm"
         }
     },
     {
@@ -24,27 +26,29 @@
             "thumbnail2": "",
             "thumbnail3": "",
             "foodRating": "9/10",
-            "ambienceRating": "9/10"
+            "ambienceRating": "9/10",
+            "openingHours": "8:15am - 8:15pm"
         }
     },
     {
         "haakon": {
             "shopName": "Haakon Superfoods & Juice",
             "foodImage": "img/haakon/poke-bowl.jpg",
-            "shopLocation": "",
+            "shopLocation": "313 Somerset, Orchard Road",
             "foodDescription": "",
             "shopWWebsite": "https://www.haakon.com.sg/",
             "thumbnail1": "",
             "thumbnail2": "",
             "thumbnail3": "",
             "foodRating": "9/10",
-            "ambienceRating": "9/10"
+            "ambienceRating": "9/10",
+            "openingHours": "10am - 9:30pm"
         }
     },
     {
         "josh's grills": {
             "shopName": "Josh's Grills",
-            "foodImage": "",
+            "foodImage": "img/joshgrills/alfredo-pasta.jpg",
             "shopLocation": "200 Victoria Street #01-69 Bugis Junction, 188021",
             "foodDescription": "",
             "shopWWebsite": "",
@@ -52,7 +56,8 @@
             "thumbnail2": "",
             "thumbnail3": "",
             "foodRating": "8/10",
-            "ambienceRating": "9/10"
+            "ambienceRating": "9/10",
+            "openingHours": "11am - 10pm"
         }
     }
 ]
