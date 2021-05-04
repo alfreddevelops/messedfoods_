@@ -76,7 +76,7 @@ function foodData() {
 
       $(".explore-images").click(cssChanges);
       $(".explore-brotherbird").click(brotherbirdInfo);
-      $(".explore-haakon").click(haakonInfo);
+      // $(".explore-haakon").click(haakonInfo);
 
     })
     .fail(function () {
@@ -115,21 +115,21 @@ function brotherbirdInfo() {
   $("#thumbnail-3").attr("src", food[0].brotherbird.thumbnail3);
 }
 
- function haakonInfo() {
-  $(".food-overlay .main-image").css("background-image", "url(" + food[2].haakon.foodImage + ")");
-  $(".overlay-title").html(food[2].haakon.shopName);
-  $(".overlay-rating").append(food[2].haakon.foodRating);
-  $(".overlay-ambience").append(food[2].haakon.ambienceRating);
+//  function haakonInfo() {
+//   $(".food-overlay .main-image").css("background-image", "url(" + food[2].haakon.foodImage + ")");
+//   $(".overlay-title").html(food[2].haakon.shopName);
+//   $(".overlay-rating").append(food[2].haakon.foodRating);
+//   $(".overlay-ambience").append(food[2].haakon.ambienceRating);
 
-  var pin = document.createElement("img");
-  pin.src = "img/icons/pin.png";
-  var src = document.getElementById("food-location");
-  src.appendChild(pin);
-  $(".overlay-location").append(food[2].haakon.shopLocation);
+//   var pin = document.createElement("img");
+//   pin.src = "img/icons/pin.png";
+//   var src = document.getElementById("food-location");
+//   src.appendChild(pin);
+//   $(".overlay-location").append(food[2].haakon.shopLocation);
 
-  $(".overlay-description").html(food[2].haakon.foodDescription);
+//   $(".overlay-description").html(food[2].haakon.foodDescription);
 
-  $("#thumbnail-1").attr("src", food[2].haakon.thumbnail1);
-  $("#thumbnail-2").attr("src", food[2].haakon.thumbnail2);
-  $("#thumbnail-3").attr("src", food[2].haakon.thumbnail3);
- }
+//   $("#thumbnail-1").attr("src", food[2].haakon.thumbnail1);
+//   $("#thumbnail-2").attr("src", food[2].haakon.thumbnail2);
+//   $("#thumbnail-3").attr("src", food[2].haakon.thumbnail3);
+//  }
